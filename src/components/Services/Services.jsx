@@ -4,7 +4,7 @@ import Card from "../Card/Card";
 import HeartEmoji from "../../resources/images/heartemoji.png";
 import Glasses from "../../resources/images/glasses.png";
 import Humble from "../../resources/images/humble.png";
-
+import Resume from "./resume.pdf";
 const Services = () => {
   return (
     <div className="services">
@@ -12,7 +12,9 @@ const Services = () => {
       <div className="awesome">
         <span>My Awesome</span>
         <span>Services</span>
-        <button className="button s-button">Download CV</button>
+        <a href={Resume} download>
+          <button className="button s-button">Download CV</button>
+        </a>
       </div>
 
       {/* Right Side */}
@@ -36,7 +38,9 @@ const Services = () => {
         <div style={{ top: "19rem", left: "20rem" }}>
           <Card emoji={Humble} heading={"Database"} detail={"MySQL, MongoDB"} />
         </div>
-      </div>
+        <div className="blur s-blur1" style={{background: "var(--blueCard)"}}></div>
+        <div className="blur s-blur2" style={{background: "var(--purple)"}}></div>        
+      </div>      
     </div>
   );
 };
