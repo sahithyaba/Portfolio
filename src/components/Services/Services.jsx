@@ -39,7 +39,7 @@ const Services = () => {
           <Card emoji={Humble} heading={"Database"} detail={"MySQL, MongoDB"} />
         </div>
         <div className="blur s-blur1" style={{background: "var(--blueCard)"}}></div>
-        <div className="blur s-blur2" style={{background: "var(--purple)"}}></div>        
+        <div className="blur s-blur2" style={{backgroundColor:"#f2ffd0"}}></div>        
       </div>      
     </div>
   );
