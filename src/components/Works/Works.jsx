@@ -6,6 +6,7 @@ import eprc from "../../resources/images/eprc.png";
 import MusicClub from "../../resources/images/Music club.png";
 import Rotaract from "../../resources/images/Rotaract.png";
 import Nss from "../../resources/images/nss.png";
+import {Link} from "react-scroll";
 
 const Works = () => {
   return (
@@ -23,7 +24,9 @@ const Works = () => {
             -{">"} Developed My Interpersonal Skills
             <br /> <br />
         </span>
-        <button className="button s-button">Hire Me</button>        
+        <Link spy={true} to='Contact' smooth={true}>
+          <button className='button s-button'>Hire Me</button>
+        </Link>      
       </div>
 
       {/* right-side */}
