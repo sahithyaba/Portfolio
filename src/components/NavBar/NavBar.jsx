@@ -9,7 +9,6 @@ const NavBar = () => {
                 <div className='n-name'>Sahithya</div>
             </div>
             {/* left :: end */}
-
             {/* right :: start */}
             <div className="n-right">
                 <div className="n-list">
